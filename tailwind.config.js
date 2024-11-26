@@ -8,7 +8,9 @@ export default {
   theme: {
   	extend: {
   		colors: {
-  			'custom-purple': '#755BB4',
+        'custom-purple': '#755BB4',
+        'base': '#F2F2F2',
+        'colortext': 'oklch(0.278078 0.029596 256.848)',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
