@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { AlignJustify, X } from "lucide-react";
@@ -28,7 +28,7 @@ const Header = (): JSX.Element => {
 
     return (
         <>
-            <header className="bg-base-200 fixed z-50 w-full bg-white">
+            <header className="bg-base-200 fixed z-50 w-full bg-base">
                 {/* Logo */}
                 <nav className="container flex items-center justify-between px-8 py-4 mx-auto">
                     <div>
