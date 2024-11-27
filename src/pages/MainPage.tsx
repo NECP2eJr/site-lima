@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import React from "react";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import CarouselServices from "@/components/Carousel";
 
 const MainPage = () => {
     return (
@@ -10,6 +11,7 @@ const MainPage = () => {
             <Header />
             <Hero />
             <About />
+            <CarouselServices />
             <Footer />
         </React.Fragment>
     )
