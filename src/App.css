@@ -41,3 +41,7 @@
 .hero-content {
   @apply z-10 flex items-center justify-center max-w-screen-lg gap-4 p-4;
 }
+
+html {
+  scroll-behavior: smooth;
+}

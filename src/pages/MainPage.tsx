@@ -4,8 +4,9 @@ import React from "react";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import CarouselServices from "@/components/Carousel";
+import FloaterLinkRedirect from "@/components/FloaterLinkRedirect";
 
-const MainPage = () => {
+const MainPage = (): JSX.Element => {
     return (
         <React.Fragment>
             <Header />
@@ -13,6 +14,7 @@ const MainPage = () => {
             <About />
             <CarouselServices />
             <Footer />
+            <FloaterLinkRedirect />
         </React.Fragment>
     )
 }

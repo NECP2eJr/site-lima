@@ -3,7 +3,7 @@ import LogoLimaPrestadora from "../assets/foto-antiga-lima-1XY_DbJv.jpg"
 import LogoLimaPrestadora2 from "../assets/logo-lima-completa-B4bT9kON.svg"
 import LogoLimaPrestadoraMobile from "../assets/logo-lima-completa-B4bT9kON.svg"
 
-const About = () => {
+const About = (): JSX.Element => {
     return (
         <React.Fragment>
             <section id="sobre" className="max-w-7xl mx-auto bg-base-100 flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-20 px-8 pt-20 pb-8 lg:pt-20">

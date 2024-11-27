@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom"
 import Background from "../assets/fundo-lima-uKFxrwah.png"
 import { Button } from "./ui/button"
+import { btnContact } from "@/lib/utils"
 
-const Hero = () => {
+const Hero = (): JSX.Element => {
+    
     return (
         <section className="relative hero overflow-hidden min-h-screen pt-16 md:pt-12">
             <img
@@ -18,7 +20,7 @@ const Hero = () => {
                     <p className="z-40 text-white opacity-80 text-lg opacity-80 mb-12 md:mb-16">
                         Realizando sonhos de milhares de famílias terem a casa própria.
                     </p>
-                    <Button className="py-6 px-16 z-0 bg-custom-purple hover:bg-purple-700">
+                    <Button onClick={btnContact} className="py-6 px-16 z-0 bg-custom-purple hover:bg-purple-700">
                         Entre em contato
                     </Button>
                 </div>

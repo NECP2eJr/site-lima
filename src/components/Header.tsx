@@ -1,25 +1,39 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";  // Link do React Router
 import { Button } from "./ui/button";
 import { AlignJustify, X } from "lucide-react";
 import Logo from "../assets/logo-BoRp8Sfr.svg";
-import { NavMenuOption } from "@/lib/utils";
+import { btnContact, NavMenuOption } from "@/lib/utils";
 import { NavMenuModel } from "@/models/optionsMenuModel";
 import MenuHeaderMobile from "./mobile/MenuHeader";
 
 const Header = (): JSX.Element => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
+    const goToid = (url: string) => {
+        const targetElement = document.querySelector("#" + url);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+        
+    }
+
     const renderNavMenu = () => {
         return NavMenuOption.map((item: NavMenuModel, index: number) => (
-            <Link className="link link-hover" title={item.label} key={index} to={item.url}>
+            <Link
+                className="link link-hover"
+                title={item.label}
+                key={index}
+                onClick={() => goToid(item.url)}
+                to={""}
+            >
                 <span>{item.label}</span>
             </Link>
         ));
-    };
-
-    const btnContact = () => {
-        return window.open("https://wa.me/+553537144220?text=Olá%20César,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20construção%20civil%20que%20vocês%20oferecem");
     };
 
     const toggleMenu = () => {
