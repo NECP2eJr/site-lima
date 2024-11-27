@@ -12,7 +12,7 @@ interface MenuHeaderMobileProps {
 
 const MenuHeaderMobile = ({ menuAction, isMenuOpen }: any) => {
     return (
-        <div className="fixed py-4 z-50 inset-y-0 right-0 w-full px-8 py-4 lg:top-0 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300">
+        <div className="fixed py-4 z-50 inset-y-0 right-0 w-full px-8 lg:top-0 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300">
             <div className="w-[100%]">
                 <div className="flex justify-between items-center">
                     <div>
