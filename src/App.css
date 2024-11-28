@@ -1,3 +1,7 @@
+*  {
+  font-family: Karla,sans-serif
+}
+
 :root {
   --fallback-p: #491eff;
   --fallback-pc: #d4dbff;
