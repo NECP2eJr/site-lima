@@ -11,7 +11,7 @@ const CarouselServices = (): JSX.Element => {
                     {CarouselItems.map((item: carouselItemModel, index: number) => {
                         return (
                             <CarouselItem key={index} className="w-full sm:basis-1/1 md:basis-1/2 lg:basis-1/3">
-                                <div id={"item" + index} className="w-full pb-16 justify-center">
+                                <div id={"item" + index} className="m-auto w-[90%] pb-16 justify-center">
                                     <div className="w-full max-w-sm bg-white shadow-2xl mx-auto rounded-b-xl">
                                         <figure>
                                             <img className="rounded-t-xl object-cover relative inset-0" src={item.image} alt={item.label} />
