@@ -10,8 +10,9 @@ const Hero = (): JSX.Element => {
             <img
                 src={Background}
                 alt="Background"
-                className="w-full h-full object-cover absolute inset-0"
+                className="w-full h-full object-cover absolute inset-0 md:object-center object-[-630px]"
             />
+
             <div className="absolute bg-[rgba(43,52,64,0.5)] inset-0 w-[100%] flex items-center justify-center text-center text-neutral-content p-8">
                 <div className="z-40 m-auto w-[100%] flex flex-col items-center max-w-xl p-8 md:p-0">
                     <h2 className="z-40 text-white font-bold text-3xl md:text-5xl tracking-tight mb-8 md:mb-12">

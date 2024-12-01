@@ -70,7 +70,6 @@ export const CarouselItems: carouselItemModel[] = [
 ]
 
 export const CNPJ: string = "04.675.505/00001-07";
-export const Address: string = "Av. João Pinheiro, 1317 - Centro, Poços de Caldas - MG, 37701-387";
 
 export const btnContact = () => {
   return window.open("https://wa.me/+553537144220?text=Olá%20César,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20construção%20civil%20que%20vocês%20oferecem");
