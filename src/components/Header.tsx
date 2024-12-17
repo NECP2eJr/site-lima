@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";  // Link do React Router
+import { useState } from "react";
+import { Link } from "react-router-dom";  // Link do React Router
 import { Button } from "./ui/button";
 import { AlignJustify, X } from "lucide-react";
 import Logo from "../assets/logo-BoRp8Sfr.svg";

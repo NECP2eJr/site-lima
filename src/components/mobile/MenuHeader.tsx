@@ -6,9 +6,7 @@ import Logo from "../../assets/logo-BoRp8Sfr.svg";
 import { useEffect, useState } from "react";
 import { AlignJustify, X } from "lucide-react";
 
-interface MenuHeaderMobileProps {
-    menuAction: () => void;
-}
+
 
 const MenuHeaderMobile = ({ menuAction, isMenuOpen }: any): JSX.Element => {
     const [menuClass, setMenuClass] = useState<string>("translate-x-full");

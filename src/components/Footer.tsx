@@ -1,5 +1,5 @@
 import { CNPJ } from "@/lib/utils";
-import { Mail, MapPin, PhoneIncoming } from "lucide-react";
+import { Mail, PhoneIncoming } from "lucide-react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo-lima-completa-B4bT9kON.svg";
 
